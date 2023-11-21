@@ -1,20 +1,14 @@
 import React from 'react'
+import { FaRegUserCircle } from "react-icons/fa";
 
-const Feedback = ({feedback}) => {
-
-    const date = new Date()
-    const [year, month, day] = [
-        date.getFullYear(),
-        date.getMonth(),
-        date.getDay()
-    ]
-
-    const dateFormat = `${day}/${month}/${year}`
+const Feedback = ({feedback, dateFormat}) => {
 
     return (
         
         <div className='feedback'>
-            <div className='profilePic'></div>
+            <div className='profilePic'>
+                <FaRegUserCircle  id='userPic'/>
+            </div>
             <div>
                 <p>
                     {(feedback.body).length > 25 ? `${(feedback.body).slice(0, 25)}...see more` : feedback.body}

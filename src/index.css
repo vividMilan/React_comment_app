@@ -38,13 +38,13 @@
 }
 
 .pageLayout{
-  padding: 10px 15px;
+  padding: 10px 40px;
 }
 
-.profilePic {
+.profilePic, #userPic {
   width: 40px;
   height: 40px;
-  background-color: #08B2E3;
+  background-color: rgb(111, 224, 255);
   border-radius: 50%;
 }
 
@@ -64,4 +64,20 @@
 
 #date{
   font-size: smaller;
+}
+
+.formPage{
+  display: flex;
+  flex-direction: column;
+}
+
+.formPage textarea{
+  margin-top: 10px;
+  height: 50dvh;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.formPage input{
+  padding: 5px;
 }
